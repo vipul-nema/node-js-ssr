@@ -1,0 +1,22 @@
+{
+  "name": "js-vn",
+  "version": "1.0.0",
+  "description": "Node es5 testing",
+  "main": "app.js",
+  "scripts": {
+    "build": "babel src/* -d dist",
+    "start:build": "npm run build && node dist/app.js",
+    "start:dev": "babel-node src/app.js",
+    "start:dev:watch": "nodemon --exec babel-node src/app.js"
+  },
+  "author": "vipulnema2610@gmail.com",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
+    "nodemon": "^2.0.12"
+  }
+}
